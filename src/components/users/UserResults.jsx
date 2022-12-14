@@ -9,11 +9,11 @@ function UserResults() {
   }, []);
 
   const fetchUsers = async () => {
-    const response = await fetch(`https://api.github.com/users`, {
+    const response = await fetch(`https://api.github.com/users`, {/*{
       headers: {
-        Authorization: `token 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`,
-      },
-    });
+        Authorization: `PUT YOUR TOKEN HERE AND REMOVE THE COMMENTS`,
+      }
+    }*/});
 
     const data = await response.json();
     setUsers(data);
